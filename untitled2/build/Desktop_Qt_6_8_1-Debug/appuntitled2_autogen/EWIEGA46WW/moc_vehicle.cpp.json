@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "Vehicle",
+            "lineNumber": 9,
+            "object": true,
+            "qualifiedClassName": "Vehicle",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "vehicle.h",
+    "outputRevision": 68
+}

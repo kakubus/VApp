@@ -1,0 +1,36 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 26,
+                        "durationMicroseconds": 803,
+                        "errorMessage": "Cannot generate efficient code for lookup of (component in /home/jakubek/untitled2/Main.qml)::clicked(...) (stored as QJSValue)",
+                        "functionName": "cursorShape",
+                        "line": 13
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 126,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 15
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 14
+                    }
+                ],
+                "filepath": "/home/jakubek/untitled2/Main.qml"
+            }
+        ],
+        "moduleId": "untitled2(appuntitled2)"
+    }
+]

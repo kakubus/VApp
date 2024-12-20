@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "CarBook",
+            "lineNumber": 11,
+            "object": true,
+            "qualifiedClassName": "CarBook",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "carbook.h",
+    "outputRevision": 68
+}

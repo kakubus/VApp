@@ -1,0 +1,12 @@
+--bare
+-I
+/home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug
+-I
+/opt/Qt/6.8.1/gcc_64/qml
+--resource
+/home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug/.qt/rcc/qmake_untitled2.qrc
+--resource
+/home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug/.qt/rcc/appuntitled2_raw_qml_0.qrc
+/home/jakubek/untitled2/Main.qml
+--json
+/home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug/appuntitled2_qmllint.json

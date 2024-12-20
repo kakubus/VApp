@@ -1,0 +1,5 @@
+module untitled2
+typeinfo appuntitled2.qmltypes
+prefer :/qt/qml/untitled2/
+Main 1.0 Main.qml
+

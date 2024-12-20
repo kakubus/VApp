@@ -1,0 +1,3 @@
+/home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug/appuntitled2_autogen/include/../EWIEGA46WW/moc_carbook.cpp.json
+/home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug/appuntitled2_autogen/include/../EWIEGA46WW/moc_carevent.cpp.json
+/home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug/appuntitled2_autogen/include/../EWIEGA46WW/moc_vehicle.cpp.json

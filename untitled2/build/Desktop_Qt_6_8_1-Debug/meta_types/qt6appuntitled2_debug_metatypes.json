@@ -1,0 +1,56 @@
+[
+    {
+        "classes": [
+            {
+                "className": "CarBook",
+                "lineNumber": 11,
+                "object": true,
+                "qualifiedClassName": "CarBook",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "carbook.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "CarEvent",
+                "lineNumber": 13,
+                "object": true,
+                "qualifiedClassName": "CarEvent",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "carevent.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "Vehicle",
+                "lineNumber": 9,
+                "object": true,
+                "qualifiedClassName": "Vehicle",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "vehicle.h",
+        "outputRevision": 68
+    }
+]
