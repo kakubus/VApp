@@ -16,6 +16,10 @@ public:
 
     QSharedPointer<CarBook> carBook() const {return _carBook; }
 
+    void addEventToCarBook(QString name, QString description, EventType type, qint64 mileage, float cost);
+    float getVehicleMaintenanceCost();      // It includes all service costs.
+    float getVehicleTotalCost();            // It includes purchase cost and all services costs.
+
 private:
     QString _mark;
     QString _model;

@@ -34,7 +34,7 @@ endif()
 set(__QT_DEPLOY_SYSTEM_NAME "Linux")
 set(__QT_DEPLOY_IS_SHARED_LIBS_BUILD "ON")
 set(__QT_DEPLOY_TOOL "GRD")
-set(__QT_DEPLOY_IMPL_DIR "/home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug/.qt")
+set(__QT_DEPLOY_IMPL_DIR "/home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug/.qt")
 set(__QT_DEPLOY_VERBOSE "")
 set(__QT_CMAKE_EXPORT_NAMESPACE "Qt6")
 set(__QT_DEPLOY_GENERATOR_IS_MULTI_CONFIG "0")
@@ -58,7 +58,7 @@ set(__QT_DEPLOY_QT_DEBUG_POSTFIX "")
 
 # Define the CMake commands to be made available during deployment.
 set(__qt_deploy_support_files
-    "/home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug/.qt/QtDeployTargets.cmake"
+    "/home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug/.qt/QtDeployTargets.cmake"
     "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreDeploySupport.cmake"
     "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlDeploySupport.cmake"
 )

@@ -37,6 +37,5 @@ float CarBook::recalculateCosts(){
     for(auto event: this->_serviceList){
         total_cost += event.get()->_cost;
     }
-
     return total_cost;
 }

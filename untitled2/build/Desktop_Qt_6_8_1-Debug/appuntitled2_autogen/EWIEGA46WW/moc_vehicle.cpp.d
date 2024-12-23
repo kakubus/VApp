@@ -1,8 +1,8 @@
-/home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug/appuntitled2_autogen/EWIEGA46WW/moc_vehicle.cpp: /home/jakubek/untitled2/vehicle.h \
-  /home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug/appuntitled2_autogen/moc_predefs.h \
-  /home/jakubek/untitled2/carbook.h \
-  /home/jakubek/untitled2/carevent.h \
-  /home/jakubek/untitled2/vehicle.h \
+/home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug/appuntitled2_autogen/EWIEGA46WW/moc_vehicle.cpp: /home/kakubus/Development/VApp/untitled2/vehicle.h \
+  /home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug/appuntitled2_autogen/moc_predefs.h \
+  /home/kakubus/Development/VApp/untitled2/carbook.h \
+  /home/kakubus/Development/VApp/untitled2/carevent.h \
+  /home/kakubus/Development/VApp/untitled2/vehicle.h \
   /opt/Qt/6.8.1/gcc_64/include/QtCore/QDateTime \
   /opt/Qt/6.8.1/gcc_64/include/QtCore/QList \
   /opt/Qt/6.8.1/gcc_64/include/QtCore/QObject \

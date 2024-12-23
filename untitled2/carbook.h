@@ -20,6 +20,7 @@ public:
     void modifyEvent(QString name, QString description, EventType type, qint64 mileage, float cost);
 
     QSharedPointer<CarEvent> getLastEvent();
+    float recalculateCosts();
 
 private:
     QList<QSharedPointer<CarEvent>> _serviceList;
@@ -29,7 +30,7 @@ private:
 
     quint16 numberOfEvents;
 
-    float recalculateCosts();
+
 
     static unsigned int NUMBER_OF_BOOKS;
 

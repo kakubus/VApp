@@ -22,7 +22,7 @@ public:
     QSharedPointer<CarEvent> get();
 
     std::tuple<QString, QString, EventType, qint64, float> carEventTuple;
-private:
+
     QString _name;
     const QDateTime _timestamp;
     QString _description;

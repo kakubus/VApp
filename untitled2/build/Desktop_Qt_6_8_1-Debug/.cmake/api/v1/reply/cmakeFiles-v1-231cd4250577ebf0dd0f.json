@@ -3395,6 +3395,48 @@
 		},
 		{
 			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickscene2dpluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickscene2dpluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickscene2dpluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickscene2dpluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickscene3dpluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickscene3dpluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickscene3dpluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickscene3dpluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
 			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktemplates2pluginConfig.cmake"
 		},
 		{
@@ -3728,6 +3770,132 @@
 		{
 			"isExternal" : true,
 			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtwebviewquickpluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3danimationpluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3danimationpluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3danimationpluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3danimationpluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dcorepluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dcorepluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dcorepluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dcorepluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dextraspluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dextraspluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dextraspluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dextraspluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dinputpluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dinputpluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dinputpluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dinputpluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dlogicpluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dlogicpluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dlogicpluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dlogicpluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3drenderpluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3drenderpluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3drenderpluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3drenderpluginAdditionalTargetInfo.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -4170,6 +4338,14 @@
 		},
 		{
 			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickscene2dpluginConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickscene3dpluginConfig.cmake"
+		},
+		{
+			"isExternal" : true,
 			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktemplates2pluginConfig.cmake"
 		},
 		{
@@ -4231,6 +4407,30 @@
 		{
 			"isExternal" : true,
 			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtwebviewquickpluginConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3danimationpluginConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dcorepluginConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dextraspluginConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dinputpluginConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dlogicpluginConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3drenderpluginConfig.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -4653,31 +4853,6 @@
 			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
 		},
 		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/FindVulkan.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/FindPackageMessage.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/FindPackageMessage.cmake"
-		},
-		{
 			"isExternal" : true,
 			"path" : "/opt/Qt/6.8.1/gcc_64/lib/cmake/Qt6OpenGL/Qt6OpenGLTargets.cmake"
 		},
@@ -4747,8 +4922,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug",
-		"source" : "/home/jakubek/untitled2"
+		"build" : "/home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug",
+		"source" : "/home/kakubus/Development/VApp/untitled2"
 	},
 	"version" : 
 	{

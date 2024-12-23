@@ -29,3 +29,9 @@ Vehicle::~Vehicle(){
     qDebug() << Q_FUNC_INFO << "Vehicle deleted. CarBook delete() called.";
 }
 
+void Vehicle::addEventToCarBook(QString name, QString description, EventType type, qint64 mileage, float cost){
+    carBook()->addEvent(name, description, type, mileage, cost);
+    float actual_totalCost = carBook()->recalculateCosts();
+
+    qDebug() << Q_FUNC_INFO << " -> Actual total costs of vehicle: " << actual_totalCost;
+}

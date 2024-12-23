@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-85dbb8e2f83c0c9d7629.json",
+					"jsonFile" : "directory-.-Debug-0eabee96bd5a6933d0b7.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -103,7 +103,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "appuntitled2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-appuntitled2-Debug-cc23ad91ca825e079708.json",
+					"jsonFile" : "target-appuntitled2-Debug-4872d0ac595952116b67.json",
 					"name" : "appuntitled2",
 					"projectIndex" : 0
 				},
@@ -176,8 +176,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug",
-		"source" : "/home/jakubek/untitled2"
+		"build" : "/home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug",
+		"source" : "/home/kakubus/Development/VApp/untitled2"
 	},
 	"version" : 
 	{

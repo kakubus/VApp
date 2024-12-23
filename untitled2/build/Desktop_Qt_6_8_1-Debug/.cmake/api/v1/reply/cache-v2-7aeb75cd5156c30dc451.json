@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug"
+			"value" : "/home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -463,7 +463,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -535,7 +535,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/jakubek/untitled2"
+			"value" : "/home/kakubus/Development/VApp/untitled2"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -847,7 +847,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/opt/Qt/Tools/Ninja/ninja"
+			"value" : "/usr/bin/ninja"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1047,7 +1047,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug/.qtc/package-manager/auto-setup.cmake"
+			"value" : "/home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug/.qtc/package-manager/auto-setup.cmake"
 		},
 		{
 			"name" : "CMAKE_PROJECT_NAME",
@@ -1466,6 +1466,18 @@
 			"value" : "[ON][v()]"
 		},
 		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_WrapVulkanHeaders",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding WrapVulkanHeaders"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/include][v()]"
+		},
+		{
 			"name" : "HAVE_STDATOMIC",
 			"properties" : 
 			[
@@ -1491,7 +1503,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "OPENGL_EGL_INCLUDE_DIR-NOTFOUND"
 		},
 		{
 			"name" : "OPENGL_GLES2_INCLUDE_DIR",
@@ -1507,7 +1519,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "OPENGL_GLES2_INCLUDE_DIR-NOTFOUND"
 		},
 		{
 			"name" : "OPENGL_GLES3_INCLUDE_DIR",
@@ -1523,7 +1535,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "OPENGL_GLES3_INCLUDE_DIR-NOTFOUND"
 		},
 		{
 			"name" : "OPENGL_GLU_INCLUDE_DIR",
@@ -1539,7 +1551,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "OPENGL_GLU_INCLUDE_DIR-NOTFOUND"
 		},
 		{
 			"name" : "OPENGL_GLX_INCLUDE_DIR",
@@ -1587,7 +1599,23 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libEGL.so"
+			"value" : "OPENGL_egl_LIBRARY-NOTFOUND"
+		},
+		{
+			"name" : "OPENGL_gl_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "OPENGL_gl_LIBRARY-NOTFOUND"
 		},
 		{
 			"name" : "OPENGL_gles2_LIBRARY",
@@ -1603,7 +1631,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libGLESv2.so"
+			"value" : "OPENGL_gles2_LIBRARY-NOTFOUND"
 		},
 		{
 			"name" : "OPENGL_gles3_LIBRARY",
@@ -1619,7 +1647,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libGLESv2.so"
+			"value" : "OPENGL_gles3_LIBRARY-NOTFOUND"
 		},
 		{
 			"name" : "OPENGL_glu_LIBRARY",
@@ -1635,7 +1663,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libGLU.so"
+			"value" : "OPENGL_glu_LIBRARY-NOTFOUND"
 		},
 		{
 			"name" : "OPENGL_glx_LIBRARY",
@@ -6683,7 +6711,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "Vulkan_INCLUDE_DIR-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "Vulkan_LIBRARY",
@@ -6699,7 +6727,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "Vulkan_LIBRARY-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libvulkan.so"
 		},
 		{
 			"name" : "XKB_INCLUDE_DIR",
@@ -6783,7 +6811,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug"
+			"value" : "/home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug"
 		},
 		{
 			"name" : "untitled2_IS_TOP_LEVEL",
@@ -6807,7 +6835,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/jakubek/untitled2"
+			"value" : "/home/kakubus/Development/VApp/untitled2"
 		}
 	],
 	"kind" : "cache",

@@ -1,2 +1,2 @@
-set(__QT_DEPLOY_TARGET_appuntitled2_FILE /home/jakubek/untitled2/build/Desktop_Qt_6_8_1-Debug/appuntitled2)
+set(__QT_DEPLOY_TARGET_appuntitled2_FILE /home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug/appuntitled2)
 set(__QT_DEPLOY_TARGET_appuntitled2_TYPE EXECUTABLE)
