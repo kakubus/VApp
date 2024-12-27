@@ -21,10 +21,12 @@ void CarBook::addEvent(QString name, QString description, EventType type, qint64
                                                       type,
                                                       mileage,
                                                       cost));
+    _totalCosts += cost;
 }
 
 void CarBook::deleteEvent(QSharedPointer<CarEvent> carEventToDelete){
     qDebug() << Q_FUNC_INFO << "Delete Car Event"  ;
+    _totalCosts -= carEventToDelete->_cost;
     _serviceList.removeOne(carEventToDelete);
 }
 

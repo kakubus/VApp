@@ -6,6 +6,8 @@
 #include "carevent.h"
 #include "vehicle.h"
 
+typedef QList<QSharedPointer<CarEvent>> EventsList;
+
 class Vehicle;
 
 class CarBook : public QObject
@@ -23,7 +25,7 @@ public:
     float recalculateCosts();
 
 private:
-    QList<QSharedPointer<CarEvent>> _serviceList;
+    EventsList _serviceList;
     float _totalCosts;
     Vehicle& _vehicle;
 

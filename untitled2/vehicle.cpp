@@ -30,8 +30,12 @@ Vehicle::~Vehicle(){
 }
 
 void Vehicle::addEventToCarBook(QString name, QString description, EventType type, qint64 mileage, float cost){
-    carBook()->addEvent(name, description, type, mileage, cost);
-    float actual_totalCost = carBook()->recalculateCosts();
+    this->carBook()->addEvent(name, description, type, mileage, cost);
+    float actual_totalCost = this->carBook()->recalculateCosts();
 
     qDebug() << Q_FUNC_INFO << " -> Actual total costs of vehicle: " << actual_totalCost;
+}
+
+EventsList* Vehicle::getEventsFromCarBook(){
+    return nullptr;
 }

@@ -6,6 +6,8 @@
 #include <QSharedPointer>
 class CarBook;
 
+typedef QList<QSharedPointer<CarEvent>> EventsList;
+
 class Vehicle : public QObject
 {
     Q_OBJECT
@@ -19,6 +21,8 @@ public:
     void addEventToCarBook(QString name, QString description, EventType type, qint64 mileage, float cost);
     float getVehicleMaintenanceCost();      // It includes all service costs.
     float getVehicleTotalCost();            // It includes purchase cost and all services costs.
+
+    EventsList* getEventsFromCarBook();
 
 private:
     QString _mark;
