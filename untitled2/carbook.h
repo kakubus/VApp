@@ -19,9 +19,13 @@ public:
 
     void addEvent(QString name, QString description, EventType type, qint64 mileage, float cost);
     void deleteEvent(QSharedPointer<CarEvent> carEventToDelete);
-    void modifyEvent(QString name, QString description, EventType type, qint64 mileage, float cost);
+    void modifyEvent(QSharedPointer<CarEvent> carEventToModify, QString name, QString description, EventType service, qint64 mileage, float cost);
+
+    QSharedPointer<CarEvent> getEventFromCarBook(int element_number);
+    QSharedPointer<CarEvent> findEvent(QSharedPointer<CarEvent> elementToFind);
 
     QSharedPointer<CarEvent> getLastEvent();
+
     float recalculateCosts();
 
 private:

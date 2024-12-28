@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 184,
+                        "durationMicroseconds": 1883,
                         "errorMessage": "Cannot generate efficient code for lookup of (component in /home/kakubus/Development/VApp/untitled2/Main.qml)::clicked(...) (stored as QJSValue)",
                         "functionName": "cursorShape",
                         "line": 13
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 228,
+                        "durationMicroseconds": 445,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 15
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 82,
+                        "durationMicroseconds": 145,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 14

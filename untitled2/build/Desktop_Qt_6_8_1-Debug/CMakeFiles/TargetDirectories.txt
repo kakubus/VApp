@@ -11,6 +11,7 @@
 /home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug/CMakeFiles/module_appuntitled2_aotstats_target.dir
 /home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug/CMakeFiles/all_aotstats.dir
 /home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug/CMakeFiles/appuntitled2_qmlimportscan.dir
+/home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug/CMakeFiles/test.dir
 /home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug/CMakeFiles/edit_cache.dir
 /home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug/CMakeFiles/rebuild_cache.dir
 /home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug/CMakeFiles/list_install_components.dir

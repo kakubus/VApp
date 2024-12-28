@@ -1,5 +1,6 @@
 #include "carbook.h"
 #include "vehicle.h"
+
 unsigned int CarBook::NUMBER_OF_BOOKS = 0;
 
 CarBook::CarBook(Vehicle & vehicle)
@@ -28,6 +29,59 @@ void CarBook::deleteEvent(QSharedPointer<CarEvent> carEventToDelete){
     qDebug() << Q_FUNC_INFO << "Delete Car Event"  ;
     _totalCosts -= carEventToDelete->_cost;
     _serviceList.removeOne(carEventToDelete);
+}
+
+QSharedPointer<CarEvent> CarBook::findEvent(QSharedPointer<CarEvent> elementToFind){
+    auto founded = std::find(_serviceList.begin(), _serviceList.end(), elementToFind);
+
+    if(founded != _serviceList.end()){
+        qDebug() << Q_FUNC_INFO << "Found element ("<< elementToFind <<") at list.";
+        return *founded;
+    }
+    else{
+        qDebug() << Q_FUNC_INFO << "Element ("<< elementToFind <<") not found at list.";
+        return nullptr;
+    }
+}
+
+QSharedPointer<CarEvent> CarBook::getEventFromCarBook(int element_number){
+    if(element_number <= _serviceList.length()){ // Test it!
+        return _serviceList.at(element_number);
+    }
+    else{
+        return nullptr;
+    }
+}
+
+void CarBook::modifyEvent(QSharedPointer<CarEvent> carEventToModify,
+                          QString name,
+                          QString description,
+                          EventType service,
+                          qint64 mileage,
+                          float cost){
+    qDebug() << Q_FUNC_INFO << "Modifying Car Event";
+    auto elementToModify = CarBook::findEvent(carEventToModify);
+
+    if(!elementToModify.isNull()){
+
+        if(name.length() != 0)
+            elementToModify->_name = name;
+        if(description.length() != 0)
+            elementToModify-> _description = description;
+       // if(type != NULL)
+            elementToModify-> _service = service;
+        if(mileage != NULL)
+            elementToModify-> _mileage = mileage;
+        if(cost != NULL)
+            elementToModify-> _cost = cost;
+        this->recalculateCosts();
+
+    }
+    else{
+        qDebug() << Q_FUNC_INFO << "Element ("<< carEventToModify <<") not found at list.";
+    }
+
+
 }
 
 QSharedPointer<CarEvent> CarBook::getLastEvent(){

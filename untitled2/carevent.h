@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QDateTime>
+#include <algorithm>
 
 enum class EventType{
     FUEL,

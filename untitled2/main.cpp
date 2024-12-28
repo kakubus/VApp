@@ -27,6 +27,10 @@ int main(int argc, char *argv[])
     someShit2->carBook()->addEvent("Oil change 3", "5w30 Dexos2", EventType::SERVICE, 146500, 100.00);
     someShit->carBook()->deleteEvent(someShit->carBook()->getLastEvent());
     someShit->addEventToCarBook("Filter change", "Air, cabin", EventType::SERVICE, 15600, 44.00);
+    auto tmpEvent = someShit->carBook()->getLastEvent();
+    someShit->carBook()->modifyEvent(tmpEvent, "Filter and oil change", "Air, cabin, oil filters", EventType::SERVICE, 15650, 144.00);
+
+
     delete someShit;
     return app.exec();
 }

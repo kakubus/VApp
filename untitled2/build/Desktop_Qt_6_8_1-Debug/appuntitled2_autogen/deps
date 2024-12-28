@@ -10,7 +10,6 @@ appuntitled2_autogen/timestamp: \
 	/home/kakubus/Development/VApp/untitled2/carevent.cpp \
 	/home/kakubus/Development/VApp/untitled2/carevent.h \
 	/home/kakubus/Development/VApp/untitled2/main.cpp \
-	/home/kakubus/Development/VApp/untitled2/tst_main_app_class_mechanics.cpp \
 	/home/kakubus/Development/VApp/untitled2/vehicle.cpp \
 	/home/kakubus/Development/VApp/untitled2/vehicle.h \
 	/opt/Qt/6.8.1/gcc_64/include/QtCore/QDateTime \
@@ -971,6 +970,7 @@ appuntitled2_autogen/timestamp: \
 	/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake \
 	/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/Compiler/GNU.cmake \
 	/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/FeatureSummary.cmake \
+	/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/FindGTest.cmake \
 	/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/FindOpenGL.cmake \
 	/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake \
 	/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/FindPackageMessage.cmake \
@@ -978,6 +978,7 @@ appuntitled2_autogen/timestamp: \
 	/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/FindThreads.cmake \
 	/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/FindVulkan.cmake \
 	/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/GNUInstallDirs.cmake \
+	/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/GoogleTest.cmake \
 	/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake \
 	/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/Internal/CheckFlagCommonConfig.cmake \
 	/opt/Qt/Tools/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake \
@@ -1247,4 +1248,10 @@ appuntitled2_autogen/timestamp: \
 	/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
 	/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
 	/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+	/usr/lib/x86_64-linux-gnu/cmake/GTest/GMockTargets-none.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/GTest/GMockTargets.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfigVersion.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestTargets-none.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestTargets.cmake \
 	/opt/Qt/Tools/CMake/bin/cmake
