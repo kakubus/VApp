@@ -2,7 +2,7 @@
     "classes": [
         {
             "className": "Vehicle",
-            "lineNumber": 11,
+            "lineNumber": 15,
             "object": true,
             "qualifiedClassName": "Vehicle",
             "superClasses": [

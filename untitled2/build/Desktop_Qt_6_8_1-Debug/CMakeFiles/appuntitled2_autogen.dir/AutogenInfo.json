@@ -1306,6 +1306,7 @@
 		[ "/home/kakubus/Development/VApp/untitled2/carbook.cpp", "MU", null ],
 		[ "/home/kakubus/Development/VApp/untitled2/carevent.cpp", "MU", null ],
 		[ "/home/kakubus/Development/VApp/untitled2/main.cpp", "MU", null ],
+		[ "/home/kakubus/Development/VApp/untitled2/tst_base.cpp", "MU", null ],
 		[ "/home/kakubus/Development/VApp/untitled2/vehicle.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

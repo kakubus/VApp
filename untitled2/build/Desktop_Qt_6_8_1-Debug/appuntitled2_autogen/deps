@@ -10,6 +10,7 @@ appuntitled2_autogen/timestamp: \
 	/home/kakubus/Development/VApp/untitled2/carevent.cpp \
 	/home/kakubus/Development/VApp/untitled2/carevent.h \
 	/home/kakubus/Development/VApp/untitled2/main.cpp \
+	/home/kakubus/Development/VApp/untitled2/tst_base.cpp \
 	/home/kakubus/Development/VApp/untitled2/vehicle.cpp \
 	/home/kakubus/Development/VApp/untitled2/vehicle.h \
 	/opt/Qt/6.8.1/gcc_64/include/QtCore/QDateTime \

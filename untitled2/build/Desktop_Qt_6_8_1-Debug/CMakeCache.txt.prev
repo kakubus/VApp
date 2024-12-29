@@ -279,6 +279,15 @@ ClassTest_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 ClassTest_SOURCE_DIR:STATIC=/home/kakubus/Development/VApp/untitled2/GTests
 
+//Value Computed by CMake
+ClassesTests_BINARY_DIR:STATIC=/home/kakubus/Development/VApp/untitled2/build/Desktop_Qt_6_8_1-Debug/UnitTests/UnitTests
+
+//Value Computed by CMake
+ClassesTests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ClassesTests_SOURCE_DIR:STATIC=/home/kakubus/Development/VApp/untitled2/UnitTests/UnitTests
+
 //The directory containing a CMake configuration file for GTest.
 GTest_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/GTest
 
@@ -439,6 +448,9 @@ untitled2_BINARY_DIR:STATIC=/home/kakubus/Development/VApp/untitled2/build/Deskt
 //Value Computed by CMake
 untitled2_IS_TOP_LEVEL:STATIC=ON
 
+//Dependencies for the target
+untitled2_LIB_DEPENDS:STATIC=general;OBJECT;general;appuntitled2;
+
 //Value Computed by CMake
 untitled2_SOURCE_DIR:STATIC=/home/kakubus/Development/VApp/untitled2
 
@@ -561,7 +573,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

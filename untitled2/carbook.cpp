@@ -28,6 +28,7 @@ void CarBook::addEvent(QString name, QString description, EventType type, qint64
 void CarBook::deleteEvent(QSharedPointer<CarEvent> carEventToDelete){
     qDebug() << Q_FUNC_INFO << "Delete Car Event"  ;
     _totalCosts -= carEventToDelete->_cost;
+  // _totalCosts = std::roundf(_totalCosts);
     _serviceList.removeOne(carEventToDelete);
 }
 
@@ -45,7 +46,7 @@ QSharedPointer<CarEvent> CarBook::findEvent(QSharedPointer<CarEvent> elementToFi
 }
 
 QSharedPointer<CarEvent> CarBook::getEventFromCarBook(int element_number){
-    if(element_number <= _serviceList.length()){ // Test it!
+    if(element_number < _serviceList.length()){ // Test it!
         return _serviceList.at(element_number);
     }
     else{
@@ -60,10 +61,10 @@ void CarBook::modifyEvent(QSharedPointer<CarEvent> carEventToModify,
                           qint64 mileage,
                           float cost){
     qDebug() << Q_FUNC_INFO << "Modifying Car Event";
+
     auto elementToModify = CarBook::findEvent(carEventToModify);
 
     if(!elementToModify.isNull()){
-
         if(name.length() != 0)
             elementToModify->_name = name;
         if(description.length() != 0)
@@ -75,17 +76,20 @@ void CarBook::modifyEvent(QSharedPointer<CarEvent> carEventToModify,
         if(cost != NULL)
             elementToModify-> _cost = cost;
         this->recalculateCosts();
-
     }
     else{
         qDebug() << Q_FUNC_INFO << "Element ("<< carEventToModify <<") not found at list.";
     }
-
-
 }
 
 QSharedPointer<CarEvent> CarBook::getLastEvent(){
+    if(this->_serviceList.isEmpty())
+        return nullptr;
     return (QSharedPointer<CarEvent>)this->_serviceList.last();
+}
+
+float CarBook::getTotalCosts(){
+    return _totalCosts;
 }
 
 float CarBook::recalculateCosts(){

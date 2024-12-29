@@ -1,6 +1,8 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
+#include <gtest/gtest.h>
+
 #include "vehicle.h"
 
 int main(int argc, char *argv[])
@@ -15,7 +17,7 @@ int main(int argc, char *argv[])
         []() { QCoreApplication::exit(-1); },
         Qt::QueuedConnection);
     engine.loadFromModule("untitled2", "Main");
-
+/*
     std::unique_ptr<Vehicle> v1(new Vehicle("VW", "Golf II", 1985));
     Vehicle* someShit = new Vehicle("VW", "Golf", 2000);
     someShit->carBook()->addEvent("Oil change", "5w30 Dexos2", EventType::SERVICE, 126500, 100);
@@ -32,5 +34,9 @@ int main(int argc, char *argv[])
 
 
     delete someShit;
+*/
+
+    ::testing::InitGoogleTest(&argc, argv);
+    RUN_ALL_TESTS();
     return app.exec();
 }

@@ -7,6 +7,7 @@ CarEvent::CarEvent()
     _description = "Some of generic maintenance.";
     _mileage = 10200;
     _cost = 100;
+    _service = EventType::OTHERS;
     CarEvent::NUMBER_OF_EVENTS++;
 
     qDebug() << Q_FUNC_INFO <<"Created CarEvent(" << CarEvent::NUMBER_OF_EVENTS << ") with default parameters:"
@@ -23,6 +24,7 @@ CarEvent::CarEvent(QString name, QString description, EventType type, qint64 mil
     _description = description;
     _mileage = (mileage > 0) ? mileage : 1;
     _cost = (cost > 0) ? cost : (float)0;
+    _service = type;
     CarEvent::NUMBER_OF_EVENTS++;
 
     qDebug() << Q_FUNC_INFO <<"Created CarEvent(" << CarEvent::NUMBER_OF_EVENTS << ") with default parameters:"

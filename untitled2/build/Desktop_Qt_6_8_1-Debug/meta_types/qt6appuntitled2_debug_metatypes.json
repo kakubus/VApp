@@ -3,7 +3,7 @@
         "classes": [
             {
                 "className": "CarBook",
-                "lineNumber": 13,
+                "lineNumber": 15,
                 "object": true,
                 "qualifiedClassName": "CarBook",
                 "superClasses": [
@@ -21,7 +21,7 @@
         "classes": [
             {
                 "className": "CarEvent",
-                "lineNumber": 14,
+                "lineNumber": 19,
                 "object": true,
                 "qualifiedClassName": "CarEvent",
                 "superClasses": [
@@ -39,7 +39,7 @@
         "classes": [
             {
                 "className": "Vehicle",
-                "lineNumber": 11,
+                "lineNumber": 15,
                 "object": true,
                 "qualifiedClassName": "Vehicle",
                 "superClasses": [

@@ -2,7 +2,7 @@
     "classes": [
         {
             "className": "CarBook",
-            "lineNumber": 13,
+            "lineNumber": 15,
             "object": true,
             "qualifiedClassName": "CarBook",
             "superClasses": [

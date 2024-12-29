@@ -5,10 +5,15 @@
 #include <QDateTime>
 #include <algorithm>
 
+#define QT_NO_DEBUG_OUTPUT
+
 enum class EventType{
     FUEL,
     SERVICE,
-    YEARLY_INSPECTION
+    YEARLY_INSPECTION,
+    BODY_REPAIR,
+    WASH_CARE,
+    OTHERS
 };
 
 class CarEvent : public QObject
@@ -25,7 +30,7 @@ public:
     std::tuple<QString, QString, EventType, qint64, float> carEventTuple;
 
     QString _name;
-    const QDateTime _timestamp;
+    QDateTime _timestamp;
     QString _description;
     EventType _service;
     qint64 _mileage;

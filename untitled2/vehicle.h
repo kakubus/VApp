@@ -4,9 +4,13 @@
 #include <QObject>
 #include "carbook.h"
 #include <QSharedPointer>
+
+#define QT_NO_DEBUG_OUTPUT
+
 class CarBook;
 
 typedef QList<QSharedPointer<CarEvent>> EventsList;
+typedef std::tuple<QString, QString, QString, qint32> VehicleTuple;
 
 class Vehicle : public QObject
 {
@@ -21,6 +25,8 @@ public:
     void addEventToCarBook(QString name, QString description, EventType type, qint64 mileage, float cost);
     float getVehicleMaintenanceCost();      // It includes all service costs.
     float getVehicleTotalCost();            // It includes purchase cost and all services costs.
+
+    VehicleTuple getVehicleData();
 
     EventsList* getEventsFromCarBook();
 

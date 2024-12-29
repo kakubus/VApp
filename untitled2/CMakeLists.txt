@@ -21,6 +21,7 @@ qt_add_qml_module(appuntitled2
         SOURCES vehicle.h vehicle.cpp
         SOURCES carbook.h carbook.cpp
         SOURCES carevent.h carevent.cpp
+        SOURCES tst_base.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -46,6 +47,8 @@ install(TARGETS appuntitled2
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
+add_test(NAME appuntitled2 COMMAND Base_Tst)
+enable_testing()
 
 # add_executable(BaseTestSuite tst_main_app_class_mechanics.cpp)
 
@@ -89,3 +92,11 @@ enable_testing()
 # if (GMock_FOUND)
 #     target_link_libraries(ClassTest INTERFACE GTest::GMock)
 # endif()
+
+
+#add_subdirectory(UnitTests/UnitTests)
+# add_test(NAME UnitTests COMMAND ClassesTests)
+# add_executable(UnitTests/UnitTests/main.cpp)
+# enable_testing()
+
+

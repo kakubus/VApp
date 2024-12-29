@@ -6,6 +6,8 @@
 #include "carevent.h"
 #include "vehicle.h"
 
+#define QT_NO_DEBUG_OUTPUT
+
 typedef QList<QSharedPointer<CarEvent>> EventsList;
 
 class Vehicle;
@@ -27,6 +29,7 @@ public:
     QSharedPointer<CarEvent> getLastEvent();
 
     float recalculateCosts();
+    float getTotalCosts();
 
 private:
     EventsList _serviceList;

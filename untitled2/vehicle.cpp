@@ -1,6 +1,7 @@
 #include "vehicle.h"
 #include "carbook.h"
 
+
 Vehicle::Vehicle() {
     _mark = "VehicleMark";
     _model = "Fantastic Mk2";
@@ -38,4 +39,8 @@ void Vehicle::addEventToCarBook(QString name, QString description, EventType typ
 
 EventsList* Vehicle::getEventsFromCarBook(){
     return nullptr;
+}
+
+VehicleTuple Vehicle::getVehicleData(){
+    return VehicleTuple{_mark, _model, _VIN, _year};
 }
