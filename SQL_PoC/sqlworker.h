@@ -2,9 +2,11 @@
 #define SQLWORKER_H
 
 #include <QObject>
-#include <QtSql/QSql>
-#include <QtSql/QSqlDatabase>
-#include <QtSql/QSqlError>
+
+#include <QSqlError>
+#include <QSqlDatabase>
+#include <QSql>
+
 
 enum Db_Type{SQLITE, MYSQL};
 
@@ -24,8 +26,12 @@ public:
     void getElement();
     void findElement();
 
+    bool isConnected();
+
 private:
-   // QSqlDatabase _db;
+    QSqlDatabase _db;
+    bool _connected;
+
 
 
 signals:
