@@ -2,24 +2,74 @@
 
 SQLWorker::SQLWorker(QObject *parent)
     : QObject{parent}
-{}
+{
+    qDebug() << Q_FUNC_INFO << "Constructor called. Available drivers: " << QSqlDatabase::drivers();
+}
 
 SQLWorker::SQLWorker(Db_Type database_type){
+    if(_db.isOpen())
+        _db.close();
     _connected = false;
-    if(Db_Type::SQLITE == database_type){
-        qDebug() << Q_FUNC_INFO << "SQLITE db selected. Simply constructor called.";
+    qDebug() << Q_FUNC_INFO << "Constructor called. Available drivers: " << QSqlDatabase::drivers();
+}
 
-    }
+SQLWorker::~SQLWorker(){
+    if (_db.isOpen())
+        _db.close();
+    qDebug() << Q_FUNC_INFO << "Destructor called. Destroy object, disconnecting database.";
+}
 
-} // for SQLite db.
-SQLWorker::SQLWorker(Db_Type database_type, QString login, QString pass, QString host, QString db_name){
+bool SQLWorker::init(Db_Type database_type, QString login, QString pass, QString host, QString db_name){
     _connected = false;
     if(Db_Type::MYSQL == database_type){
         qDebug() << Q_FUNC_INFO << "MYSQL db selected. Enchanced constructor called.";
 
+        _db = QSqlDatabase();
+        _db = QSqlDatabase::addDatabase("QMYSQL","sqlworker_db_instance");
+        _db.setHostName(host);
+        _db.setDatabaseName(db_name);
+        _db.setUserName(login);
+        _db.setPassword(pass);
+
+        _connected = _db.open();
+        if(!_connected){
+            qDebug() << Q_FUNC_INFO << "ERROR: " << _db.lastError().driverText();
+            return false;
+        }
+        else{
+            qDebug() << Q_FUNC_INFO << "MySQL db opened successfully.";
+            return true;
+        }
     }
-} // For SQL remote servers
-
-SQLWorker::~SQLWorker(){
-
+    else{
+        qDebug() << Q_FUNC_INFO << "ERROR: " << "Not recognized db type. Wrong type provided.";
+        return false;
+    }
 }
+
+bool SQLWorker::init(Db_Type database_type, QString db_name){
+    _connected = false;
+    if(Db_Type::SQLITE == database_type){
+        qDebug() << Q_FUNC_INFO << "SQLITE db selected. Simply constructor called.";
+
+        _db = QSqlDatabase::addDatabase("QSQLITE");
+        _db.setDatabaseName(db_name);
+
+        _connected = _db.open();
+        if(!_connected){
+            qDebug() << Q_FUNC_INFO << "ERROR: " << _db.lastError().driverText();
+            return false;
+        }
+        else{
+            qDebug() << Q_FUNC_INFO << "SQLITE db opened successfully.";
+            return true;
+        }
+    }
+    else{
+        qDebug() << Q_FUNC_INFO << "ERROR: " << "Not recognized db type. Wrong type provided.";
+        return false;
+    }
+}
+
+
+

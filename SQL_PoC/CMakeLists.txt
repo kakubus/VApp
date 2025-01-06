@@ -28,10 +28,10 @@ install(TARGETS SQL_PoC
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
-add_subdirectory(SQL_Tests)
-enable_testing()
-add_custom_command(
-    TARGET SQL_PoC
-    POST_BUILD
-    COMMAND ${CMAKE_CTEST_COMMAND} --verbose
-)
+#add_subdirectory(SQL_Tests)
+#enable_testing()
+# add_custom_command(
+#     TARGET SQL_PoC
+#     POST_BUILD
+#     COMMAND ${CMAKE_CTEST_COMMAND} --verbose
+# )

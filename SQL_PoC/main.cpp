@@ -1,5 +1,5 @@
 #include <QCoreApplication>
-
+#include "sqlworker.h"
 
 int main(int argc, char *argv[])
 {
@@ -16,6 +16,11 @@ int main(int argc, char *argv[])
     // If you do not need a running Qt event loop, remove the call
     // to a.exec() or use the Non-Qt Plain C++ Application template.
     qDebug() << "Run - SQL Test application\n";
+
+    SQLWorker* mysql = new SQLWorker();
+    mysql->init(Db_Type::MYSQL, "admin", "admin", "192.168.2.10", "Test");
+    mysql->init(Db_Type::SQLITE, "db_file.db");
+
   //  return 0;
     return a.exec();
 

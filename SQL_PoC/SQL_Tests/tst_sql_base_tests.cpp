@@ -17,3 +17,7 @@ TEST(SQLTests, Sql_Base_Tests2)
     ASSERT_THAT(0, Eq(0));
 }
 
+TEST(SQLTests, Sql_Base_Tests3){
+    SQLWorker* sqlwrk= new SQLWorker();
+}
+

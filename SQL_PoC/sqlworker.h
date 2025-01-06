@@ -5,6 +5,7 @@
 
 #include <QSqlError>
 #include <QSqlDatabase>
+#include <QSqlRecord>
 #include <QSql>
 
 
@@ -20,6 +21,9 @@ public:
 
     ~SQLWorker();
 
+    bool init(Db_Type database_type, QString db_name); // for SQLITE
+    bool init(Db_Type database_type, QString login, QString pass, QString host, QString db_name); // for M
+
     void createTable();
 
     void saveElement();
@@ -31,6 +35,8 @@ public:
 private:
     QSqlDatabase _db;
     bool _connected;
+
+   // QList<QString> _nameOfTables;
 
 
 
