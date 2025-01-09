@@ -4,6 +4,7 @@
 #include <QObject>
 
 #include <QSqlError>
+#include <QSqlQuery>
 #include <QSqlDatabase>
 #include <QSqlRecord>
 #include <QSql>
@@ -34,7 +35,10 @@ public:
 
 private:
     QSqlDatabase _db;
+    Db_Type _db_type;
     bool _connected;
+
+    bool checkIfEmptyDb();
 
    // QList<QString> _nameOfTables;
 

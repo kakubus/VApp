@@ -17,9 +17,10 @@ int main(int argc, char *argv[])
     // to a.exec() or use the Non-Qt Plain C++ Application template.
     qDebug() << "Run - SQL Test application\n";
 
-    SQLWorker* mysql = new SQLWorker();
-    mysql->init(Db_Type::MYSQL, "admin", "admin", "192.168.2.10", "Test");
-    mysql->init(Db_Type::SQLITE, "db_file.db");
+    SQLWorker* sqlwrk = new SQLWorker();
+    // sqlwrk->init(Db_Type::MYSQL, "admin", "admin", "192.168.2.10", "Test");
+    sqlwrk->init(Db_Type::SQLITE, "db_file.db");
+
 
   //  return 0;
     return a.exec();

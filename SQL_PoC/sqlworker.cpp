@@ -23,6 +23,7 @@ bool SQLWorker::init(Db_Type database_type, QString login, QString pass, QString
     _connected = false;
     if(Db_Type::MYSQL == database_type){
         qDebug() << Q_FUNC_INFO << "MYSQL db selected. Enchanced constructor called.";
+        _db_type = Db_Type::MYSQL;
 
         _db = QSqlDatabase();
         _db = QSqlDatabase::addDatabase("QMYSQL","sqlworker_db_instance");
@@ -37,7 +38,7 @@ bool SQLWorker::init(Db_Type database_type, QString login, QString pass, QString
             return false;
         }
         else{
-            qDebug() << Q_FUNC_INFO << "MySQL db opened successfully.";
+            qDebug() << Q_FUNC_INFO << "MySQL db (db_name: "<< db_name <<") opened successfully.";
             return true;
         }
     }
@@ -51,6 +52,7 @@ bool SQLWorker::init(Db_Type database_type, QString db_name){
     _connected = false;
     if(Db_Type::SQLITE == database_type){
         qDebug() << Q_FUNC_INFO << "SQLITE db selected. Simply constructor called.";
+        _db_type = Db_Type::SQLITE;
 
         _db = QSqlDatabase::addDatabase("QSQLITE");
         _db.setDatabaseName(db_name);
@@ -61,7 +63,8 @@ bool SQLWorker::init(Db_Type database_type, QString db_name){
             return false;
         }
         else{
-            qDebug() << Q_FUNC_INFO << "SQLITE db opened successfully.";
+            qDebug() << Q_FUNC_INFO << "SQLITE db (db_name: "<< db_name <<") opened successfully.";
+            checkIfEmptyDb();
             return true;
         }
     }
@@ -69,6 +72,35 @@ bool SQLWorker::init(Db_Type database_type, QString db_name){
         qDebug() << Q_FUNC_INFO << "ERROR: " << "Not recognized db type. Wrong type provided.";
         return false;
     }
+}
+
+bool SQLWorker::checkIfEmptyDb(){
+    if(!_db.isOpen()){
+        qDebug() << Q_FUNC_INFO << "ERROR: " << "Database is not opened.";
+        return true;
+    }
+
+    QSqlQuery query(this->_db);
+
+    // if(_db_type == Db_Type::MYSQL){
+
+    // }
+    // if(_db_type == Db_Type::SQLITE){
+
+    // }
+    query.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%';");
+
+    if(!query.exec()){
+        qDebug() << Q_FUNC_INFO << "ERROR Query: " << _db.lastError().text();
+        return true;
+    }
+
+    if(query.next()){ // If it is true, it means that there are tables inside.
+        qDebug() << Q_FUNC_INFO << "Database is not empty!";
+        return false;
+    }
+    qDebug() << Q_FUNC_INFO << "Database is empty!";
+    return true;
 }
 
 
