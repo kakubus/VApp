@@ -25,11 +25,13 @@ public:
     bool init(Db_Type database_type, QString db_name); // for SQLITE
     bool init(Db_Type database_type, QString login, QString pass, QString host, QString db_name); // for M
 
-    void createTable();
+    QSqlRecord execute(QString query_to_execute);
 
-    void saveElement();
-    void getElement();
-    void findElement();
+    // void createTable();
+
+    // void saveElement();
+    // void getElement();
+    // void findElement();
 
     bool isConnected();
 

@@ -103,5 +103,24 @@ bool SQLWorker::checkIfEmptyDb(){
     return true;
 }
 
+QSqlRecord SQLWorker::execute(QString query_to_execute){
+    if(!_db.isOpen()){
+        qDebug() << Q_FUNC_INFO << "ERROR: " << "Database is not opened.";
+        return QSqlRecord();
+    }
+
+    QSqlQuery query(this->_db);
+    query.prepare(query_to_execute);
+
+    if(!query.exec()){
+        qDebug() << Q_FUNC_INFO << "ERROR Query: " << _db.lastError().text();
+        return QSqlRecord();
+    }
+    if(query.next()){
+        return query.record();
+    }
+    return QSqlRecord();
+}
+
 
 

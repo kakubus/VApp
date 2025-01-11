@@ -17,6 +17,7 @@ add_executable(SQL_PoC
   main.cpp
   sqlworker.h sqlworker.cpp
   ISqlWorker.h
+  serializationsql.h serializationsql.cpp
 
 )
 target_link_libraries(SQL_PoC Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Sql)
