@@ -116,11 +116,27 @@ QSqlRecord SQLWorker::execute(QString query_to_execute){
         qDebug() << Q_FUNC_INFO << "ERROR Query: " << _db.lastError().text();
         return QSqlRecord();
     }
-    if(query.next()){
+    if(query.next()){ // if found elements
         return query.record();
     }
     return QSqlRecord();
 }
 
+int SQLWorker::countFromTable(QString tableName){
+    QString preQuery = "SELECT COUNT (*) FROM " + tableName + "";
+    int numberOfElements = 0;
 
+    QSqlQuery query(this->_db);
+    query.prepare(preQuery);
+
+    if(!query.exec()){
+        qDebug() << Q_FUNC_INFO << "ERROR Query(" << preQuery << "): " << _db.lastError().text();
+        return -1;
+    }
+    if(query.first())
+        numberOfElements = query.value(0).toInt();
+    qDebug() << Q_FUNC_INFO << "Query: " << preQuery << " returned rows count: " << numberOfElements << "";
+
+    return numberOfElements;
+}
 

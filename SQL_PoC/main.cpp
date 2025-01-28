@@ -21,6 +21,9 @@ int main(int argc, char *argv[])
     // sqlwrk->init(Db_Type::MYSQL, "admin", "admin", "192.168.2.10", "Test");
     sqlwrk->init(Db_Type::SQLITE, "db_file.db");
 
+    QString createTableQuery = "CREATE TABLE IF NOT EXISTS Vehicle (id SERIAL PRIMARY KEY, mark VARCHAR(255) NOT NULL, model VARCHAR(255) NOT NULL, VIN VARCHAR(255) NOT NULL UNIQUE, year INT NOT NULL, carBookId INT, FOREIGN KEY (carBookId) REFERENCES CarBook(id));";
+    sqlwrk->execute(createTableQuery);
+    sqlwrk->countFromTable("Vehicle");
 
   //  return 0;
     return a.exec();

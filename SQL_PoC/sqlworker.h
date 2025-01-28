@@ -25,7 +25,11 @@ public:
     bool init(Db_Type database_type, QString db_name); // for SQLITE
     bool init(Db_Type database_type, QString login, QString pass, QString host, QString db_name); // for M
 
+    bool compareTables(); // in future, should be able to compare structures of "existing" and "related with class"
+
     QSqlRecord execute(QString query_to_execute);
+
+    int countFromTable(QString tableName);
 
     // void createTable();
 
