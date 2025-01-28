@@ -25,6 +25,16 @@ int main(int argc, char *argv[])
     sqlwrk->execute(createTableQuery);
     sqlwrk->countFromTable("Vehicle");
 
+    createTableQuery = "INSERT INTO Vehicle (mark, model, VIN, year, carBookId) VALUES ('VW', 'Golf', 'JTDBR32E530050021', 2021, 1);";
+    sqlwrk->execute(createTableQuery);
+    sqlwrk->countFromTable("Vehicle");
+
+    createTableQuery = "INSERT INTO Vehicle (mark, model, VIN, year, carBookId) VALUES ('VW', 'Golf', 'JTDBR32E530050021', 2021, 1);";
+    sqlwrk->execute(createTableQuery);
+
+    createTableQuery = "SELECT * FROM Vehicle;";
+    auto experiment = sqlwrk->execute(createTableQuery);
+
   //  return 0;
     return a.exec();
 
