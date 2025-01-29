@@ -35,6 +35,8 @@ int main(int argc, char *argv[])
     createTableQuery = "SELECT * FROM Vehicle;";
     auto experiment = sqlwrk->execute(createTableQuery);
 
+    QVector<QSqlRecord> experiment2 = sqlwrk->selectMultiplyRecords(createTableQuery);
+
   //  return 0;
     return a.exec();
 

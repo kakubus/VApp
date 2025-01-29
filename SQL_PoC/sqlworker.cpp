@@ -122,6 +122,27 @@ QSqlRecord SQLWorker::execute(QString query_to_execute){
     return QSqlRecord();
 }
 
+QVector<QSqlRecord> SQLWorker::selectMultiplyRecords(QString query_to_execute){
+    QVector<QSqlRecord> results;
+    if(!_db.isOpen()){
+        qDebug() << Q_FUNC_INFO << "ERROR: " << "Database is not opened.";
+        return QVector<QSqlRecord>();
+    }
+
+    QSqlQuery query(this->_db);
+    query.prepare(query_to_execute);
+
+    if(!query.exec()){
+        qDebug() << Q_FUNC_INFO << "ERROR Query: " << _db.lastError().text();
+        return QVector<QSqlRecord>();
+    }
+    while(query.next()){ // How will this behave when I would add multithreading?
+        results.push_back(query.record());
+    }
+    qDebug() << Q_FUNC_INFO << "Fetched items: " << results.size() << "\n";
+    return results;
+}
+
 int SQLWorker::countFromTable(QString tableName){
     QString preQuery = "SELECT COUNT (*) FROM " + tableName + "";
     int numberOfElements = 0;

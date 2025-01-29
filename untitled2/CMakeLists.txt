@@ -22,6 +22,7 @@ qt_add_qml_module(appuntitled2
         SOURCES carbook.h carbook.cpp
         SOURCES carevent.h carevent.cpp
         SOURCES tst_base.cpp
+        SOURCES programdatabase.h programdatabase.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

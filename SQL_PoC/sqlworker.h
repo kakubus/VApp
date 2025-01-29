@@ -2,6 +2,7 @@
 #define SQLWORKER_H
 
 #include <QObject>
+#include <QVector>
 
 #include <QSqlError>
 #include <QSqlQuery>
@@ -28,6 +29,7 @@ public:
     bool compareTables(); // in future, should be able to compare structures of "existing" and "related with class"
 
     QSqlRecord execute(QString query_to_execute);
+    QVector<QSqlRecord> selectMultiplyRecords(QString query_to_execute);
 
     int countFromTable(QString tableName);
 
