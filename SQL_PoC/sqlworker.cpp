@@ -138,7 +138,11 @@ QVector<QSqlRecord> SQLWorker::selectMultiplyRecords(QString query_to_execute){
     }
     while(query.next()){ // How will this behave when I would add multithreading?
         results.push_back(query.record());
+    //      query.record().value(1);
+    //      auto dupa = query.record().value(2);
+
     }
+
     qDebug() << Q_FUNC_INFO << "Fetched items: " << results.size() << "\n";
     return results;
 }
