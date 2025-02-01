@@ -48,9 +48,9 @@ int main(int argc, char *argv[])
     //INSERT INTO Dictionary (english, polish, description) VALUES ('investigate', 'śledztwo', 'Jakieś tam śledztwo kurła jego madź');
 
 
-    QString createTableDict = "CREATE TABLE IF NOT EXISTS Dictionary (id INT NOT NULL AUTO_INCREMENT, english VARCHAR(255) NOT NULL, polish VARCHAR(255) NOT NULL, description VARCHAR(255), PRIMARY KEY (id));";
+    QString createTableDict = "CREATE TABLE IF NOT EXISTS Dictionary (id INTEGER, english VARCHAR(255) NOT NULL, polish VARCHAR(255) NOT NULL, description VARCHAR(255), PRIMARY KEY ('id' AUTOINCREMENT) );";
     sqlwrk->execute(createTableDict);
-    sqlwrk->execute("INSERT INTO Dictionary (english, polish, describe) VALUES ('investigate', 'śledztwo', 'Jakieś tam śledztwo kurła jego madź' );");
+    sqlwrk->execute("INSERT INTO Dictionary (english, polish, description) VALUES ('Experimental' , 'Eksperymentalnie', 'Eksperyment w bazie' );");
 
 
    // return a.exec();
