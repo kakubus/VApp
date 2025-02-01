@@ -44,7 +44,11 @@ int main(int argc, char *argv[])
     sqlwrk->getTableHeader("Vehicle");
     sqlwrk->compareTables("Vehicle", {"id", "mark", "model", "VIN", "year", "carBookId"});
 
-    QString createTableDict = "CREATE TABLE IF NOT EXISTS Dictionary (id AUTO_INCREMENT PRIMARY KEY, english VARCHAR(255) NOT NULL, polish VARCHAR(255) NOT NULL, describe VARCHAR(255));";
+
+    //INSERT INTO Dictionary (english, polish, description) VALUES ('investigate', 'śledztwo', 'Jakieś tam śledztwo kurła jego madź');
+
+
+    QString createTableDict = "CREATE TABLE IF NOT EXISTS Dictionary (id INT NOT NULL AUTO_INCREMENT, english VARCHAR(255) NOT NULL, polish VARCHAR(255) NOT NULL, description VARCHAR(255), PRIMARY KEY (id));";
     sqlwrk->execute(createTableDict);
     sqlwrk->execute("INSERT INTO Dictionary (english, polish, describe) VALUES ('investigate', 'śledztwo', 'Jakieś tam śledztwo kurła jego madź' );");
 
