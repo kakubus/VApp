@@ -1,4 +1,5 @@
 #include "sqlworker.h"
+#include <algorithm>
 
 SQLWorker::SQLWorker(QObject *parent)
     : QObject{parent}
@@ -113,7 +114,7 @@ QSqlRecord SQLWorker::execute(QString query_to_execute){
     query.prepare(query_to_execute);
 
     if(!query.exec()){
-        qDebug() << Q_FUNC_INFO << "ERROR Query: " << _db.lastError().text();
+        qDebug() << Q_FUNC_INFO << "returned:" << query.lastError().text() << "ERROR Query("<< query_to_execute <<")";
         return QSqlRecord();
     }
     if(query.next()){ // if found elements
@@ -163,5 +164,58 @@ int SQLWorker::countFromTable(QString tableName){
     qDebug() << Q_FUNC_INFO << "Query: " << preQuery << " returned rows count: " << numberOfElements << "";
 
     return numberOfElements;
+}
+
+QList<QString> SQLWorker::getListTables(){
+    QList<QString> listTables;
+    if(!_db.isOpen()){
+        qDebug() << Q_FUNC_INFO << "ERROR: " << "Database is not opened.";
+        return QList<QString>();
+    }
+
+    auto list = _db.tables(QSql::Tables);
+    if(list.size()== 0){
+        qDebug() << Q_FUNC_INFO << "Not found any tables!";
+        return QList<QString>();
+    }
+    for(auto element : list){
+        qDebug() << Q_FUNC_INFO << "Found table named: " << element;
+        listTables.push_back(element);
+    }
+    return listTables;
+}
+
+QList<QString> SQLWorker::getTableHeader(QString tablename){
+    QList<QString> listColumnNames;
+    if(!_db.isOpen()){
+        qDebug() << Q_FUNC_INFO << "ERROR: " << "Database is not opened.";
+        return QList<QString>();
+    }
+    QSqlRecord header = _db.record(tablename);
+    int number_of_columns = header.count();
+    if(number_of_columns == 0){
+        qDebug() << Q_FUNC_INFO << "ERROR: " << "Something went wrong. Table is not exist?";
+        return QList<QString>();
+    }
+    for(int i = 0; i < number_of_columns; i++){
+        QString columnName = header.fieldName(i);
+        listColumnNames.push_back(columnName);
+        qDebug() << Q_FUNC_INFO << "Found column named: " << columnName;
+    }
+    return listColumnNames;
+}
+
+bool SQLWorker::compareTables(QString tableName, QList<QString> expectedTableHeader){
+    bool result = false;
+    auto sqlTableHeader = getTableHeader(tableName);
+
+    result = std::equal(expectedTableHeader.begin(), expectedTableHeader.end(), sqlTableHeader.begin(), [](const QString &a, const QString &b){return a == b;});
+
+    if(!result)
+        qDebug() << Q_FUNC_INFO << " = "<< result << " | ERROR: Table is not valid with expected header!";
+    else
+        qDebug() << Q_FUNC_INFO << " = "<< result << " | Table "<< tableName << " matched properly with expected header" << expectedTableHeader;
+
+    return result;
 }
 

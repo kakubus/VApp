@@ -26,12 +26,15 @@ public:
     bool init(Db_Type database_type, QString db_name); // for SQLITE
     bool init(Db_Type database_type, QString login, QString pass, QString host, QString db_name); // for M
 
-    bool compareTables(); // in future, should be able to compare structures of "existing" and "related with class"
+    bool compareTables(QString tableName, QList<QString> expectedTableHeader); // in future, should be able to compare structures of "existing" and "related with class"
+    QList<QString> getTableHeader(QString tableName); // probably refactor it - instead QList<QString> use QStringList
+    QList<QString> getListTables();
 
     QSqlRecord execute(QString query_to_execute);
     QVector<QSqlRecord> selectMultiplyRecords(QString query_to_execute);
 
     int countFromTable(QString tableName);
+
 
     // void createTable();
 

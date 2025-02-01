@@ -37,7 +37,19 @@ int main(int argc, char *argv[])
 
     QVector<QSqlRecord> experiment2 = sqlwrk->selectMultiplyRecords(createTableQuery);
 
-  //  return 0;
-    return a.exec();
+    QString createTableQueryCarBook = "CREATE TABLE IF NOT EXISTS CarBook (id SERIAL PRIMARY KEY, totalCosts VARCHAR(255) NOT NULL, vehicleId INT, FOREIGN KEY (vehicleId) REFERENCES Vehicle(id));";
+    sqlwrk->execute(createTableQueryCarBook);
+
+    sqlwrk->getListTables();
+    sqlwrk->getTableHeader("Vehicle");
+    sqlwrk->compareTables("Vehicle", {"id", "mark", "model", "VIN", "year", "carBookId"});
+
+    QString createTableDict = "CREATE TABLE IF NOT EXISTS Dictionary (id AUTO_INCREMENT PRIMARY KEY, english VARCHAR(255) NOT NULL, polish VARCHAR(255) NOT NULL, describe VARCHAR(255));";
+    sqlwrk->execute(createTableDict);
+    sqlwrk->execute("INSERT INTO Dictionary (english, polish, describe) VALUES ('investigate', 'śledztwo', 'Jakieś tam śledztwo kurła jego madź' );");
+
+
+   // return a.exec();
+    return 0;
 
 }

@@ -3,6 +3,8 @@
 
 #include <QObject>
 
+typedef QVector<QString> TableHeaderDefinition;
+
 class ProgramDatabase : public QObject
 {
     Q_OBJECT
